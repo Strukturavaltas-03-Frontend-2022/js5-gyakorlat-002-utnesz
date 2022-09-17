@@ -4,11 +4,10 @@
 
 const validateVisaCardNumber = (visaNr) => {
     const visaPattern = /^[4][0-9]{15}$/;
-    if (visaPattern.exec(visaNr)) {
+    if (visaNr.match(visaPattern)) {
         return true
     } else {
         return false
-    }
-};
+    }}
 
 export default validateVisaCardNumber;
